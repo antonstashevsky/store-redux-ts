@@ -27,9 +27,11 @@ const Navigation = () => {
           <Nav.Link as={NavLink} to="/store">
             <h4>Store</h4>
           </Nav.Link>
-          <Nav.Link as={NavLink} to="/login">
-            <h4>Login</h4>
-          </Nav.Link>
+          {!isLoggedIn && (
+            <Nav.Link as={NavLink} to="/login">
+              <h4>Login</h4>
+            </Nav.Link>
+          )}
         </Nav>
 
         {isLoggedIn && (

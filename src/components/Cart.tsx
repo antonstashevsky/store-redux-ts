@@ -16,7 +16,6 @@ const Cart: React.FC = () => {
   const isLoggedIn = useAppSelector((state) => state.user.isLoggedIn);
   const [isCheckout, setIsCheckout] = useState(false);
   const onCartClicked = () => dispatch(toggleCart());
-  console.log(cartIsOpen);
 
   const onOrder = () => {
     setIsCheckout((prev) => true);

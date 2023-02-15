@@ -1,15 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, Card } from "react-bootstrap";
 import { addToCart } from "../features/itemsSlice";
 import { useAppDispatch } from "../hooks/hooks";
 import { Item } from "../interfaces/item";
-
-// interface StoreItemProps {
-//   id: number;
-//   name: string;
-//   price: number;
-//   imgUrl: string;
-// }
 
 const StoreItem: React.FC<Item> = ({
   id,
@@ -20,7 +13,6 @@ const StoreItem: React.FC<Item> = ({
   title,
   image,
 }) => {
-  // const [inCart, setInCart] = useState(false);
   const dispatch = useAppDispatch();
 
   const addItemToCart = (

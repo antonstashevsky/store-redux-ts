@@ -46,11 +46,6 @@ const Checkout: React.FC<Props> = ({ onCancel, onConfirm }) => {
       city: enteredCity,
       address: enteredAddress,
     });
-
-    // const enteredName = nameInputRef.current?.value;
-    // const enteredEmail = emailInputRef.current?.value;
-    // const enteredCity = cityInputRef.current?.value;
-    // const enteredAddress = addressInputRef.current?.value;
   };
 
   return (
@@ -59,7 +54,6 @@ const Checkout: React.FC<Props> = ({ onCancel, onConfirm }) => {
         <div>
           <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label>Name</Form.Label>
-            {/* <Form.Control type="name" placeholder="Enter name" ref={nameInputRef} /> */}
             <Form.Control
               type="name"
               placeholder="Enter name"

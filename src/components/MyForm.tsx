@@ -10,8 +10,6 @@ interface MyFormProps {
 const MyForm: React.FC<MyFormProps> = ({ title, handleClick }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [emailIsValid, setEmailIsValid] = useState<boolean>(false);
-  // const [passwordIsValid, setPasswordIsValid] = useState<boolean>(false);
   const [formIsValid, setFormIsValid] = useState<boolean>(false);
   const dispatch = useAppDispatch();
 

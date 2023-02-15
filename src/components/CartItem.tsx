@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Stack } from "react-bootstrap";
 import { deleteFromCart } from "../features/itemsSlice";
-import { useAppDispatch, useAppSelector } from "../hooks/hooks";
+import { useAppDispatch } from "../hooks/hooks";
 import { Item } from "../interfaces/item";
 
 const CartItem: React.FC<Item> = ({

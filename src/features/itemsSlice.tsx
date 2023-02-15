@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Item } from "../interfaces/item";
-import { getStorage, ref } from "firebase/storage";
 import { User } from "../interfaces/user";
 import { RootState } from "./store";
 import { toast } from "react-toastify";
