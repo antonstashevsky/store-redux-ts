@@ -30,6 +30,7 @@ const Cart: React.FC = () => {
     dispatch(addOrder(orderData));
     dispatch(toggleCart());
     dispatch(clearCartItems());
+    onCancel();
   };
 
   return (
